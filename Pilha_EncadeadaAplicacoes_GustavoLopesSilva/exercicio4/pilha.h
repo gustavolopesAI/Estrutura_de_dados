@@ -7,11 +7,12 @@ typedef int Item;
 typedef struct pilha *Pilha;
 
 Pilha criarPilha(void);
-bool destruirPilha(Pilha p);
+void destruirPilha(Pilha p);
 bool empilhar(Pilha p, Item x);
 bool desempilhar(Pilha p, Item *x);
-bool consultartopo(Pilha p, Item *x);
+bool consultarTopo(Pilha p, Item *x);
 bool pilhaVazia(Pilha p);
-void pilhaCheia(Pilha p);
+void exibirPilha(Pilha p);
+void esvaziarPilha(Pilha p);
 
-#endif 
+#endif
